@@ -140,7 +140,6 @@ jobs:
         LANG: en_US.UTF-8
         CHARSET: UTF-8
       run: |
-#        chmod -c 755 /tmp/generate_list.sh && /tmp/generate_list.sh donwload && mv -fv /tmp/domain_bad_ipset.conf ./ && mv -fv /tmp/domain_bad_nftset.conf ./ && mv -fv /tmp/unblock_ipset.conf ./ && mv -fv /tmp/unblock_nftset.conf ./
         chmod -c 755 /tmp/generate_list.sh && /tmp/generate_list.sh donwload
 
 ####
