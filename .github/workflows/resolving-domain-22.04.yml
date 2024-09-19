@@ -139,6 +139,7 @@ jobs:
       env:
         LANG: en_US.UTF-8
         CHARSET: UTF-8
+        MODE: ${{ secrets.MODE }}
       run: |
         chmod -c 755 /tmp/generate_list.sh && /tmp/generate_list.sh donwload
 
