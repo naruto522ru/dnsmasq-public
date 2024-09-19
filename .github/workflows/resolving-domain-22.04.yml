@@ -133,7 +133,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-          pip install -r requirements.txt
+          pip install -r utils/requirements.txt
 
     - name: Pre-start and start bash script
       env:
@@ -146,7 +146,7 @@ jobs:
 
 ####
 
-    - name: Commit ACL files for Shadowsocks
+    - name: Commit configs files
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Auto-update config"
