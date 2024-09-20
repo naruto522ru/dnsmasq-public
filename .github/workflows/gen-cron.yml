@@ -165,7 +165,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4.3.1
       with:
-        name: lists_address-merge-${{ env.BUILD_TIMESTAMP }}
+        name: configs-${{ env.BUILD_TIMESTAMP }}
         retention-days: 3
         path: |
           domain_bad_ipset.conf
