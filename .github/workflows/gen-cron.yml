@@ -144,7 +144,7 @@ jobs:
       run: |
         chmod -c 755 /tmp/generate_list.sh && /tmp/generate_list.sh donwload
 
-####
+#### Adding Testing dnsmasq configs
 
 ####
 
@@ -172,3 +172,9 @@ jobs:
           domain_bad_nftset.conf
           unblock_ipset.conf
           unblock_nftset.conf
+
+####
+    - name: Create ipranges
+      run: |
+       nslookup -type=A google.com
+####

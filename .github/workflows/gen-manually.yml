@@ -141,7 +141,7 @@ jobs:
       run: |
         chmod -c 755 /tmp/generate_list.sh && /tmp/generate_list.sh create_full
 
-####
+#### Adding testing dnsmasq configs
 
 ####
 
@@ -169,3 +169,7 @@ jobs:
           domain_bad_nftset.conf
           unblock_ipset.conf
           unblock_nftset.conf
+
+####
+
+####
