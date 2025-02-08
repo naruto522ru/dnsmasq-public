@@ -114,8 +114,9 @@ jobs:
     - shell: bash
       env:
         TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        NAME_ACCOUNT_GITHUB: naruto522ru
       run: |
-        curl --max-time 30 --retry-delay 3 --retry 10 -4 -H "Authorization: token ${TOKEN}" -# https://raw.githubusercontent.com/naruto522ru/dnsmasq-private/master/generate_list.sh > /tmp/generate_list.sh
+        curl --max-time 30 --retry-delay 3 --retry 10 -4 -H "Authorization: token ${TOKEN}" -# https://raw.githubusercontent.com/${NAME_ACCOUNT_GITHUB}/dnsmasq-private/master/generate_list.sh > /tmp/generate_list.sh
 
     - name: Set up Python
       uses: actions/setup-python@v5
